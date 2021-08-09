@@ -100,6 +100,21 @@
     // for (let i = 25; i < 80; i += 5) {
     //   console.log(Math.floor(Math.random() * 100))
     // }
+
+    let score = 0
+
+    for (let i = 0; i < 10; i++) {
+      let random = Math.floor(Math.random() * 10) + 1
+      let guess = prompt('Pick a number between 1 & 10')
+      if (random === parseInt(guess)) {
+        score++
+        alert('Correct!')
+      } else {
+        alert('Incorrect!')
+      }
+    }
+
+    alert(`You got ${score} points!`)
   </script>
 </body>
 </html>
